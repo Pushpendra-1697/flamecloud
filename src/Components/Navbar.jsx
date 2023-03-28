@@ -5,8 +5,8 @@ const Navbar = () => {
     return (
         <Box borderBottom={"1px solid black"} display="flex" fontFamily="Figtree">
             <Img mt="17.87px" w="25.06px" h="25.06px" src={"./Images/logo.png"} alt="logo"></Img>
-            <Text style={{ fontStyle: "normal", fontWeight: "600px", fontSize: "26px", lineHeight: "31px", color: "#111822", marginLeft: "16.94px", marginTop: "14px" }}>CreativeProxies</Text>
-            <Box display={"flex"} gap="30px" ml="31px" fontStyle={"normal"} fontWeight="400px" lineHeight="19px" letterSpacing={"-0.02em"} color="#111822" mt="20px">
+            <Text style={{ fontStyle: "normal", fontWeight: "600", fontSize: "26px", lineHeight: "31px", color: "#111822", marginLeft: "16.94px", marginTop: "14px" }}>CreativeProxies</Text>
+            <Box display={"flex"} gap="30px" ml="31px" fontStyle={"normal"} fontWeight="400" lineHeight="19px" letterSpacing={"-0.02em"} color="#111822" mt="20px">
                 <Text>Pricing</Text>
                 <Box><select>
                     <option value={""}>Explore Tools</option>
