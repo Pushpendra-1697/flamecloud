@@ -40,13 +40,15 @@ const Landing = () => {
             </Box>
 
 
-            <Text color={"#111822"} display={"flex"} justifyContent="center" alignItems={"center"} mt="95px">WELCOME TO CREATIVE PROXIES</Text>
-            <Box fontSize={"56px"} lineHeight="67.2px" m="3px 400px" w={"824px"} h="134px">
+            <Text color={"#111822"} display={"flex"} justifyContent="center" alignItems={"center"} mt={{base: "95px", sm: "100.95px", lg: "95px"}} fontSize={{base: "16px",sm: "30px", lg: "16px"}} 
+            ml={{base: '0', sm: "14%", lg: '0'}}
+            textAlign="center">WELCOME TO CREATIVE PROXIES</Text>
+            <Box fontSize={{base: "56px", sm: "86px", lg: "56px"}} lineHeight={{base: "67.2px", sm: "103.2px", lg: "67.2px"}} m={{base: "3px 400px", sm: "4px 100px", lg: "3px 400px"}} w={{base: "824px", sm: "900px", lg: "824px"}} h={{base: "134px", sm: "309px", lg: "134px"}}>
                 We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service since 2020
             </Box>
-            <Box mb="26px" mt="17px" lineHeight={"26.4px"} m="auto" fontSize={"22px"} w="509px" fontWeight={"500"} h="52px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Box>
-            <Box textAlign={"center"} mt="26px"><Button bg="blue" w="222px" h={"47px"} color={"white"} fontSize="18px">Get Started<AiOutlineArrowRight /></Button></Box>
-            <Box bg="#00B67A1A" w="200px" borderRadius={"10px"} m="auto" mt="22px" mb="54px">
+            <Box mb="26px" mt={{base: "17px", sm:"26px", lg: "17px"}} lineHeight={{base: "26.4px", sm:"48px",lg: "26.4px"}} m="auto" fontSize={{base: "22px", sm: "40px", lg: "22px"}} w={{base: "509px", sm: "899px", lg: "509px"}} fontWeight={"500"} h={{base: "52px", sm: "92px", lg: "52px"}} ml={{base:"40%", sm:"14%", lg: "40%"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Box>
+            <Box textAlign={"center"} mt="26px"><Button bg="blue" w="222px" h={"47px"} color={"white"} p={{base: '12px 55px', sm: "26px 115px", lg: "12px 55px"}} fontSize={{base:"18px", sm: "37.3px", lg: "18px"}}>Get Started<AiOutlineArrowRight /></Button></Box>
+            <Box bg="#00B67A1A" w={{base:"200px", sm: "480px", lg: "200px"}} borderRadius={"10px"} m="auto" mt="22px" mb="54px" textAlign={"center"}>
                 <Box padding={"10px"}>
                     <Icon bg="#00B67A" color={"white"} as={AiFillStar} />
                     <Icon ml="6.61px" bg="#00B67A" color={"white"} as={AiFillStar} />
@@ -54,44 +56,44 @@ const Landing = () => {
                     <Icon ml="6.61px" bg="#00B67A" color={"white"} as={AiFillStar} />
                     <Icon ml="6.61px" bg="#00B67A" color={"white"} as={AiFillStar} />
                 </Box>
-                <Text padding={"10px"} mt="8.45px">Rated 4.5 on <Icon color="#00B67A" as={AiFillStar} /> Trustpilot</Text>
+                <Text fontSize={{base: "16px", sm: "33.15px", lg: "16px"}} padding={"10px"} mt="8.45px">Rated 4.5 on <Icon color="#00B67A" as={AiFillStar} /> Trustpilot</Text>
             </Box>
-            <hr style={{ width: "588px", margin: "auto" }} />
-            <Box display={"grid"} gap="16.16px" gridTemplateColumns="repeat(4,1fr)" width="1200px" m="auto" mt="36.36px" mb="138.36px">
+            <Box w={{base: "588px", sm:"900px", lg:"588px"}} m="auto"><hr/></Box>
+            <Box pl='18px' display={"grid"} gap={{base: "16.16px", sm: "24.49px", lg: "16.16px"}} gridTemplateColumns={{base: "repeat(4,1fr)", sm:"repeat(2,1fr)", lg: "repeat(4,1fr)"}} width="1200px" m="auto" mt="36.36px" mb="138.36px">
                 <Box border={"1px solid #D4EAE8"} padding={"25.28px 46.84px 26px 51px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
                     <AiFillUnlock />
-                    <Text ml={"16px"} lineHeight={"21.6px"} fontSize={"18px"} width={"148px"}>Lorem Ipsum Dolor Sit Amet Top</Text>
+                    <Text ml={"16px"} lineHeight={{base:"21.6px", sm:"33.06px", lg: "21.6px"}} fontSize={{base:"18px", sm:"27.55px", lg:"18px"}} width={{base:"148px", sm:"227px", lg:"148px"}}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
                 <Box border={"1px solid #D4EAE8"} padding={"25.28px 46.84px 26px 51px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
                     <AiFillUnlock />
-                    <Text ml={"16px"} lineHeight={"21.6px"} fontSize={"18px"} width={"148px"}>Lorem Ipsum Dolor Sit Amet Top</Text>
+                    <Text ml={"16px"} lineHeight={{base:"21.6px", sm:"33.06px", lg: "21.6px"}} fontSize={{base:"18px", sm:"27.55px", lg:"18px"}} width={{base:"148px", sm:"227px", lg:"148px"}}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
                 <Box border={"1px solid #D4EAE8"} padding={"25.28px 46.84px 26px 51px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
                     <AiFillUnlock />
-                    <Text ml={"16px"} lineHeight={"21.6px"} fontSize={"18px"} width={"148px"}>Lorem Ipsum Dolor Sit Amet Top</Text>
+                    <Text ml={"16px"} lineHeight={{base:"21.6px", sm:"33.06px", lg: "21.6px"}} fontSize={{base:"18px", sm:"27.55px", lg:"18px"}} width={{base:"148px", sm:"227px", lg:"148px"}}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
                 <Box border={"1px solid #D4EAE8"} padding={"25.28px 46.84px 26px 51px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
                     <AiFillUnlock />
-                    <Text ml={"16px"} lineHeight={"21.6px"} fontSize={"18px"} width={"148px"}>Lorem Ipsum Dolor Sit Amet Top</Text>
+                    <Text ml={"16px"} lineHeight={{base:"21.6px", sm:"33.06px", lg: "21.6px"}} fontSize={{base:"18px", sm:"27.55px", lg:"18px"}} width={{base:"148px", sm:"227px", lg:"148px"}}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
             </Box>
 
 
 
-            <Box mb="177px" fontWeight={"500"} bg="#0566D4">
+            <Box mb="177px" fontWeight={"500"} bg="#0566D4" w={{base:"100%", sm: "1220px", lg: "100%"}}>
                 <Box display={"flex"} alignItems="center" justifyContent={"center"}>
                     <Box pt="115px">
-                        <Text w={"550px"} mb="10px" color={"#FFFFFF"} fontSize="36px" >Why we are the Best Proxy Providers</Text>
-                        <Text ml="20px" w={"465px"} color={"#FFFFFF"} lineHeight={"21.6px"} mt="10px" fontSize={"18px"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+                        <Text w={{base: "550px", sm: "884px", lg: "550px"}} mb="10px" color={"#FFFFFF"} fontSize={{base:"36px", sm:"55.1px", lg: "36px"}} >Why we are the Best Proxy Providers</Text>
+                        <Text ml="20px" w={{base:"465px", sm:"711.73px", lg:"465px"}} color={"#FFFFFF"} lineHeight={{base:"21.6px", sm: "33.06px", lg:"21.6px"}} mt="10px" fontSize={{base: "18px", sm:"27.55px", lg:"18px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
                     </Box>
                 </Box>
 
-                <Box pb="114px" w={"85%"} m="auto" display={"grid"} gap="16px" gridTemplateColumns="repeat(4,1fr)">
+                <Box pl="15px" pb="114px" w={{base:"85%", sm:"100%", lg: "85%"}} m="auto" display={"grid"} gap={{base:'16px', sm: "24.49px", lg: "16px"}} gridTemplateColumns={{base: "repeat(4,1fr)", sm: "repeat(2,1fr)", lg: "repeat(4,1fr)"}}>
                     {featuresData && featuresData.map(({ id, feature, lorem }) =>
-                        <Box w="286px" h="160px" borderRadius={"5px"} color={"#FFFFFF"} mt="30px" padding={"25px"} border={"1px solid #D4EAE8"} key={id} p="22px 25px">
+                        <Box w={{base:"286px", sm:"437.76px", lg:"286px"}} h={{base:"160px", sm:"244.9px", lg:"160px"}} borderRadius={"5px"} color={"#FFFFFF"} mt="30px" padding={"25px"} border={"1px solid #D4EAE8"} key={id} p="22px 25px">
                             <BiMessageRounded />
-                            <Heading m="9.53px 0 8px 0" fontWeight={"600"} fontSize={"20px"}>{feature}</Heading>
-                            <Text lineHeight={"16.8px"} fontSize={"14px"} fontWeight="400">{lorem}</Text>
+                            <Heading m="9.53px 0 8px 0" fontWeight={"600"} fontSize={{base:"20px", sm:"30.61px", lg:"20px" }}>{feature}</Heading>
+                            <Text lineHeight={{base:"16.8px", sm:"25.71px", lg:"16.8px"}} fontSize={{base:"14px", sm:"21.43px", lg:"14px"}} fontWeight="400">{lorem}</Text>
                         </Box>
                     )}
                 </Box>
@@ -101,115 +103,117 @@ const Landing = () => {
 
 
 
-            <Box mb="79px" display={"flex"} justifyContent="center" flexDirection={"column"} alignItems="center">
-                <Heading mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>You choose, we <span style={{ color: "#077BFF" }}>Deliver!</span></Heading>
-                <Text w="465px" lineHeight={"21.6px"} fontSize={"18px"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+            <Box mb={{base:"79px", sm:"66.69px", lg:"79px"}} display={"flex"} justifyContent="center" flexDirection={"column"} alignItems="center" w={{base:"50%", sm: "1200px", lg:"50%"}} m="auto">
+                <Heading mb={{base:"10px", sm:"18.52px", lg:"10px"}} lineHeight={{base:"43.2px", sm:"79.99px", lg:"43.2px"}} fontSize={{base:"36px", sm:"66.66px", lg:"36px"}}>You choose, we <span style={{ color: "#077BFF" }}>Deliver!</span></Heading>
+                <Text w={{base:"465px", sm:"861px", lg:"465px"}} lineHeight={{base:"21.6px", sm:"39.99px", lg:"21.6px"}} fontSize={{base:"18px", sm:"33.33px", lg:"18px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             </Box>
 
-            <Box display={"flex"} justifyContent="center" alignItems={"center"} gap="20px">
-                <Box borderRadius={"5px"} border={"1px solid #1E1E1E1A"} h={"447px"} w="344px" bg='#1E1E1E03'>
-                    <Box display={"flex"} gap="80px">
+            <Box display={"flex"} flexDirection={{base:"row", sm:"column", lg:"row"}} justifyContent="center" alignItems={"center"} gap={{base:"20px", sm:"69.53px", lg:"20px"}} border="2px solid red" w={{base:"50%", sm:"100%", lg:"50%"}} m="auto">
+                <Box m="auto"  borderRadius={{base:"5px", sm:"8.55px", lg:"5px"}} border={"1px solid #1E1E1E1A"} h={{base:"447px", sm:"764.06px", lg:"447px"}} w={{base:"344px", sm: "588px", lg:"344px"}} bg='#1E1E1E03'>
+                    <Box display={"flex"} gap={{base:"80px", sm:"149.31px", lg:"80px"}}>
                         <Box p="26px 0 14px 28px">
                             <Text w="40px" h="35px" display={"flex"} justifyContent="center" alignItems={"center"} bg="#2E73E8" borderRadius={"10px"} color={'#FFFFFF'} border={"1px solid "} padding="10px" fontSize={"8px"}>V<span style={{ fontSize: "18px" }}>4</span></Text>
-                            <Heading mt="8px" fontWeight={"600"} fontSize={"20px"}>IPv4 Proxies</Heading>
+                            <Heading mt="8px" fontWeight={"600"} fontSize={{base:"20px", sm:"34.19px", lg:"20px"}}>IPv4 Proxies</Heading>
                             <Text fontWeight={"400"} mt="8px">Static/Rotating</Text>
                         </Box>
-                        <Box p="37px 40px 24px 0" lineHeight={"18px"}>
-                            <Text fontWeight={'600'} fontSize="12px">FROM</Text>
+                        <Box p="37px 40px 24px 0" lineHeight={{base:"18px", sm:"41.02px", lg:"18px"}}>
+                            <Text fontWeight={'600'} fontSize={{base:"12px", sm:"20.51px", lg:"12px"}}>FROM</Text>
                             <Text><span style={{ fontSize: "18px", color: "#077BFF" }}>$4.75</span>/day</Text>
-                            <Text fontSize={"12px"}>OR</Text>
+                            <Text fontSize={{base:"12px", sm:"20.51px", lg:"12px"}}>OR</Text>
                             <Text><span style={{ fontSize: "18px", color: "#077BFF" }}>$116.75</span>/mo</Text>
                         </Box>
                     </Box>
                     <hr style={{ width: "295px", margin: "auto", color: "#25CD08" }} />
-                    <Box pl="28px" fontWeight={"400"} mt="14px" lineHeight={"28.2px"} mb="21px">
+                    <Box fontSize={{base:"16px", sm:"27.37px", lg:"16px"}} pl="28px" fontWeight={"400"} mt="14px" lineHeight={{base:"28.2px", sm:"52.85px", lg:"28.2px"}} mb="21px">
                         <Text mb="10px">Plan Includes :</Text>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box  display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">100 Threads</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box  display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Dedicated IP Pool</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box  display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Residential Proxy</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box  display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Unlimited Bandwidth</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box  display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Worldwide Locations</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">40 GBps</Text>
                         </Box>
                     </Box>
                     <hr style={{ width: "295px", margin: "auto", color: "#25CD08" }} />
                     <Box>
-                        <Button m="16px 24px 27px 25px" fontSize={'18px'} fontWeight="600" color={"#FFFFFF"} bg="#077BFF" borderRadius={"5px"} w={"295px"} h="47px">View Pricing <Icon ml={"4px"} as={AiOutlineArrowRight} /></Button>
+                        <Button m="16px 24px 27px 25px" fontSize={{base:"18px", sm:"30.77px", lg:"18px"}} fontWeight="600" color={"#FFFFFF"} bg="#077BFF" borderRadius={{base:"5px", sm:"8.55px", lg:"5px"}} w={{base:"295px", sm:"504.24px", lg:"295px"}} h={{base:"47px", sm:"80.34px", lg:"47px"}}>View Pricing <Icon ml={"4px"} as={AiOutlineArrowRight} /></Button>
                     </Box>
                 </Box>
 
-                <Box mt="40px" borderRadius={"5px"} border={"1px solid #16D113"} h="495px" w='344px' bg='#16D1131A'>
 
 
-                    <Box display={"flex"} gap="80px">
+
+
+                <Box mt="40px" borderRadius={{base:"5px", sm:"8.55px", lg:"5px"}} border={"1px solid #16D113"} h={{base:"495px", sm:"846.92px", lg:"495px"}} w={{base:"344px", sm:"588.57px", lg:"344px"}} bg='#16D1131A'>
+                    <Box display={"flex"} gap={{base:"80px", sm:"149.31px", lg:"80px"}}>
                         <Box p="26px 0 14px 28px">
                             <Text w="40px" h="35px" display={"flex"} justifyContent="center" alignItems={"center"} bg="#25CD08" borderRadius={"10px"} color={'#FFFFFF'} border={"1px solid "} padding="10px" fontSize={"8px"}>V<span style={{ fontSize: "18px" }}>6</span></Text>
-                            <Heading mt="8px" fontWeight={"600"} fontSize={"20px"}>IPv4 Proxies</Heading>
+                            <Heading mt="8px" fontWeight={"600"} fontSize={{base:"20px", sm:"34.19px", lg:"20px"}}>IPv6 Proxies</Heading>
                             <Text fontWeight={"400"} mt="8px">Static/Rotating</Text>
                         </Box>
                         <Box p="37px 40px 24px 0" lineHeight={"18px"}>
-                            <Text fontWeight={'600'} fontSize="12px">FROM</Text>
+                            <Text fontWeight={'600'} fontSize={{base:"12px", sm:"20.51px", lg:"12px"}}>FROM</Text>
                             <Text><span style={{ fontSize: "18px", color: "#16D113" }}>$4.75</span>/day</Text>
-                            <Text fontSize={"12px"}>OR</Text>
+                            <Text fontSize={{base:"12px", sm:"20.51px", lg:"12px"}}>OR</Text>
                             <Text><span style={{ fontSize: "18px", color: "#16D113" }}>$116.75</span>/mo</Text>
                         </Box>
                     </Box>
                     <hr style={{ width: "295px", margin: "auto", color: "#25CD08" }} />
-                    <Box pl="28px" fontWeight={"400"} mt="14px" lineHeight={"28.2px"} mb="21px">
+                    <Box fontSize={{base:"16px", sm:"27.37px", lg:"16px"}} pl="28px" fontWeight={"400"} mt="14px" lineHeight={{base:"28.2px", sm:"52.85px", lg:"28.2px"}} mb="21px">
                         <Text mb="10px">Plan Includes :</Text>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">100 Threads</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Dedicated IP Pool</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Residential Proxy</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Unlimited Bandwidth</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right.png' alt='right' />
                             <Text mt="-4px">Worldwide Locations</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right1.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right1.png' alt='right' />
                             <Text mt="-4px">Dedicated Subnets</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right1.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right1.png' alt='right' />
                             <Text mt="-4px">1 Octilion IPS</Text>
                         </Box>
-                        <Box display={"flex"} gap="8px">
-                            <Img textAlign={"center"} w="12.5px" h='8.5px' src='./Images/right1.png' alt='right' />
+                        <Box display={"flex"} gap={{base:"8px", sm:"13px", lg:"8px"}}>
+                            <Img textAlign={"center"} w={{base:"12.5px", sm:"21.37px", lg:"12.5px"}} h={{base:"8.5px", sm:"14.53px", lg:"8.5px"}} src='./Images/right1.png' alt='right' />
                             <Text mt="-4px">Septiltion per Location</Text>
                         </Box>
                     </Box>
                     <hr style={{ width: "295px", margin: "auto", color: "#D9D8D6" }} />
                     <Box>
-                        <Button m="16px 24px 27px 25px" fontSize={'18px'} fontWeight="600" color={"#FFFFFF"} bg="#2CE517" borderRadius={"5px"} w={"295px"} h="47px">View Pricing <Icon ml={"4px"} as={AiOutlineArrowRight} /></Button>
+                        <Button m="16px 24px 27px 25px" fontSize={{base:"18px", sm:"30.77px", lg:"18px"}} fontWeight="600" color={"#FFFFFF"} bg="#2CE517" borderRadius={{base:"5px", sm:"8.55px", lg:"5px"}} w={{base:"295px", sm:"504.24px", lg:"295px"}} h={{base:"47px", sm:"80.34px", lg:"47px"}}>View Pricing <Icon ml={"4px"} as={AiOutlineArrowRight} /></Button>
                     </Box>
 
 
