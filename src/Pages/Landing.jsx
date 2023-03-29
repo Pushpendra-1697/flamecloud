@@ -40,15 +40,14 @@ const Landing = () => {
             </Box>
 
 
-            <Text color={"#111822"} display={"flex"} justifyContent="center" alignItems={"center"} mt={{ base: "95px", sm: "100.95px", lg: "95px" }} fontSize={{ base: "16px", sm: "30px", lg: "16px" }}
-                ml={{ base: '0', sm: "14%", lg: '0' }}
-                textAlign="center">WELCOME TO CREATIVE PROXIES</Text>
+            <Text width={{ base: "20%", sm: "1200px", lg: "20%" }} m={"auto"} color={"#111822"} textAlign="center" mt={{ base: "95px", sm: "100.95px", lg: "95px" }} fontSize={{ base: "16px", sm: "30px", lg: "16px" }}
+            >WELCOME TO CREATIVE PROXIES</Text>
             <Box fontSize={{ base: "56px", sm: "86px", lg: "56px" }} lineHeight={{ base: "67.2px", sm: "103.2px", lg: "67.2px" }} m={{ base: "3px 400px", sm: "4px 100px", lg: "3px 400px" }} w={{ base: "824px", sm: "900px", lg: "824px" }} h={{ base: "134px", sm: "309px", lg: "134px" }}>
                 We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service since 2020
             </Box>
-            <Box mb="26px" mt={{ base: "17px", sm: "26px", lg: "17px" }} lineHeight={{ base: "26.4px", sm: "48px", lg: "26.4px" }} m="auto" fontSize={{ base: "22px", sm: "40px", lg: "22px" }} w={{ base: "509px", sm: "899px", lg: "509px" }} fontWeight={"500"} h={{ base: "52px", sm: "92px", lg: "52px" }} ml={{ base: "40%", sm: "14%", lg: "40%" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Box>
-            <Box textAlign={"center"} mt="26px"><Button bg="blue" w="222px" h={"47px"} color={"white"} p={{ base: '12px 55px', sm: "26px 115px", lg: "12px 55px" }} fontSize={{ base: "18px", sm: "37.3px", lg: "18px" }}>Get Started<AiOutlineArrowRight /></Button></Box>
-            <Box bg="#00B67A1A" w={{ base: "200px", sm: "480px", lg: "200px" }} borderRadius={"10px"} m="auto" mt="22px" mb="54px" textAlign={"center"}>
+            <Box mb={{ base: "26px", sm: "50px", lg: "26px" }} mt={{ base: "17px", sm: "26px", lg: "17px" }} lineHeight={{ base: "26.4px", sm: "48px", lg: "26.4px" }} m="auto" fontSize={{ base: "22px", sm: "40px", lg: "22px" }} w={{ base: "509px", sm: "899px", lg: "509px" }} fontWeight={"500"} h={{ base: "52px", sm: "92px", lg: "52px" }} ml={{ base: "40%", sm: "14%", lg: "40%" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Box>
+            <Box ml={{ base: 0, sm: "40%", lg: 0 }} textAlign={"center"} mt="26px"><Button borderRadius={{ base: "10px", sm: "20.72px", lg: "10px" }} bg="blue" w={{ base: "222px", sm: "460px", lg: "222px" }} h={{ base: "47px", sm: "97.39px", lg: "47px" }} color={"white"} p={{ base: '12px 55px', sm: "36px 115px", lg: "12px 55px" }} fontSize={{ base: "18px", sm: "37.3px", lg: "18px" }}>Get Started<AiOutlineArrowRight /></Button></Box>
+            <Box ml={{ base: "40%", sm: "40%", lg: "43%" }} bg="#00B67A1A" w={{ base: "200px", sm: "480px", lg: "200px" }} borderRadius={"10px"} m="auto" mt={{ base: "22px", sm: "44px", lg: "22px" }} mb="54px" textAlign={"center"}>
                 <Box padding={"10px"}>
                     <Icon bg="#00B67A" color={"white"} as={AiFillStar} />
                     <Icon ml="6.61px" bg="#00B67A" color={"white"} as={AiFillStar} />
