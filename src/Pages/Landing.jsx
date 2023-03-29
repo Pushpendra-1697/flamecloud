@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineArrowRight, AiFillStar, AiFillUnlock } from 'react-icons/ai';
 import { Icon } from '@chakra-ui/icons';
 import { BiMessageRounded } from 'react-icons/bi';
-import { GiFrogPrince } from 'react-icons/gi'
+import { GiFrogPrince } from 'react-icons/gi';
+import Footer from '../Components/Footer';
 
 const Landing = () => {
     const [featuresData, setFeaturesData] = useState([]);
@@ -79,10 +80,10 @@ const Landing = () => {
 
             <Box mb="177px" fontWeight={"500"} bg="#0566D4">
                 <Box display={"flex"} alignItems="center" justifyContent={"center"}>
-                <Box pt="115px">
-                    <Text w={"550px"} mb="10px" color={"#FFFFFF"} fontSize="36px" >Why we are the Best Proxy Providers</Text>
-                    <Text ml="20px" w={"465px"} color={"#FFFFFF"} lineHeight={"21.6px"} mt="10px" fontSize={"18px"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
-                </Box>
+                    <Box pt="115px">
+                        <Text w={"550px"} mb="10px" color={"#FFFFFF"} fontSize="36px" >Why we are the Best Proxy Providers</Text>
+                        <Text ml="20px" w={"465px"} color={"#FFFFFF"} lineHeight={"21.6px"} mt="10px" fontSize={"18px"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+                    </Box>
                 </Box>
 
                 <Box pb="114px" w={"85%"} m="auto" display={"grid"} gap="16px" gridTemplateColumns="repeat(4,1fr)">
@@ -377,45 +378,7 @@ const Landing = () => {
 
             <hr style={{ width: "1192px", color: "#D9D8D6", margin: "auto" }} />
 
-            <Box w="1192px" m="auto" mb="48px" mt="34px" display={"flex"} gap="246px">
-                <Box>
-                    <Box display={"flex"} gap="7.42px">
-                        <Img w={"26.4px"} h="26.4px" src="./Images/logo.png" alt="logo" />
-                        <Heading fontSize={'26px'} fontWeight="600">CreativeProxies</Heading>
-                    </Box>
-                    <Text fontSize={'14px'} mb="15px" fontWeight='400' color={'#111822'} lineHeight={'16.8px'} w="212px" h="34px" mt="8px">Copyright © 2023 Creative Proxies. All rights reserved.</Text>
-                    <Button display={"flex"} justifyContent="center" alignItems={"center"} border={"1px solid #5865F2"} bg='#5865F21A' borderRadius={"10px"} w={"221px"} h="44px" fontSize={"16px"} fontWeight='500'> <Img mr='5.67px' h={"10.67px"} w="14.67px" src='./Images/surface1.png' alt='surface1' />Join Our Discord</Button>
-                </Box>
-
-                <Box display={"flex"} gap="100px">
-                    <Box>
-                        <Heading color={"#111822"} fontSize={"14px"} fontWeight="600">Explore</Heading>
-                        <Box mt="10px" lineHeight={"24.2px"} fontWeight={"500"} fontSize={"16px"}>
-                            <Text>Proxy Location Checker</Text>
-                            <Text>IPv6 Comptability</Text>
-                            <Text>Blogs</Text>
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Heading color={"#111822"} fontSize={"14px"} fontWeight="600">Resources</Heading>
-                        <Box mt="10px" lineHeight={"24.2px"} fontWeight={"500"} fontSize={"16px"}>
-                            <Text>FAQs</Text>
-                            <Text>Branding</Text>
-                            <Text>Network Information</Text>
-                            <Text>Imprint</Text>
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Heading color={"#111822"} fontSize={"14px"} fontWeight="600">Support</Heading>
-                        <Box mt="10px" lineHeight={"24.2px"} fontWeight={"500"} fontSize={"16px"}>
-                            <Text>Status</Text>
-                            <Text>Terms of Service</Text>
-                            <Text>Privacy Policy</Text>
-                        </Box>
-                    </Box>
-                </Box>
-
-            </Box>
+            <Footer />
 
 
         </Box>

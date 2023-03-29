@@ -6,7 +6,7 @@ function App() {
   return (
     <Box>
       <Navbar />
-      <hr style={{width: "1192px", color: '#D9D8D6' , margin: "auto"}} />
+      <Box w={{base: "1192px", sm: "900px", lg: "1192px"}} m="auto"><hr style={{ color: '#D9D8D6' , margin: "auto"}} /></Box>
       <AllRoutes />
     </Box>
   );
