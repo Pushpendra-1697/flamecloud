@@ -5,6 +5,7 @@ import { Icon } from '@chakra-ui/icons';
 import { BiMessageRounded } from 'react-icons/bi';
 import { GiFrogPrince } from 'react-icons/gi';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Landing = () => {
     const [featuresData, setFeaturesData] = useState([]);
@@ -19,17 +20,19 @@ const Landing = () => {
     const getData = async () => {
         try {
             setLoading(true);
-            let res = await fetch(`https://blog-database-ten.vercel.app/feature`);
-            res = await res.json();
+            let res = await axios.get(`https://blog-database-ten.vercel.app/feature`);
             setLoading(false);
+            console.log(res);
             setError(false);
-            setFeaturesData(res);
+            setFeaturesData(res.data);
         } catch (err) {
             setError(true);
             setLoading(false);
             console.log(err);
         }
     };
+
+    // console.log(featuresData);
 
     const handleClickToNavigateProxyLocationPage = () => {
         navigate('/proxy');
