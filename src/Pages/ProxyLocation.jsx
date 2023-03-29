@@ -26,16 +26,16 @@ const ProxyLocation = () => {
       <Box
         w={["90%", "50%", "50%"]}
         m="auto"
-        fontSize={["36px", "40px", "56px"]}
+        fontSize={["56px", "40px", "56px"]}
         fontWeight="600"
         lineHeight={["35px", "45px", "56px"]}
       >
         <Text>Check Locations of all your </Text>
-        <Text display={"inline"}>Proxies</Text>
+        <Text display={"inline"}>Proxies </Text>
         <Text display={"inline"} color="#077BFF">
           Free
         </Text>
-        <Text display={"inline"}>of Cost</Text>
+        <Text display={"inline"}> of Cost</Text>
       </Box>
       <Box w={["68%", "46%", "36%"]} m="auto" mt="0.8%">
         <Text
@@ -54,7 +54,7 @@ const ProxyLocation = () => {
         boxSizing="border-box"
         background="rgba(217, 216, 214, 0.25)"
         border="1px solid rgba(0, 0, 0, 0.25)"
-        bordeRadius="5px"
+        borderRadius="5px"
         w={["88%", "68%", "48%"]}
         m="auto"
         mt="2%"
@@ -116,7 +116,7 @@ const ProxyLocation = () => {
         textAlign={"justify"}
         boxSizing="border-box"
         border="1px solid rgba(0, 0, 0, 0.25)"
-        bordeRadius="5px"
+        borderRadius="5px"
         w={["88%", "70%", "48%"]}
         m="auto"
       >
@@ -162,6 +162,7 @@ const ProxyLocation = () => {
         w={["88%", "68%", "38%"]}
         m="auto"
         mt="2%"
+        mb={{ base: "99px", sm: "117.82px", lg: "99px" }}
       >
         <Text fontWeight={"500"} fontSize="18px" lineHeight={"22px"} mt="1%">
           Check out our IPv6 Compatibility Checker
@@ -174,10 +175,11 @@ const ProxyLocation = () => {
           gap={1}
           pt={["5px", null, null]}
         >
-          <Image src={'./Images/RightArrow.png'} alt="" w={["40%", "50%", "100%"]} />
-          <Image src={'./Images/View Tool.png'} alt="" w={["20%", "40%", "80%"]} />
+          <Image src={'./Images/View Tool.png'} alt="" w={["40%", "50%", "100%"]} />
+          <Image src={'./Images/RightArrow.png'} alt="" w={["20%", "40%", "80%"]} />
         </Box>
       </Box>
+
     </Box>
   );
 }

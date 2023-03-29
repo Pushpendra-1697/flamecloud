@@ -1,5 +1,6 @@
 import { Box, Button, Heading, Img, Text } from '@chakra-ui/react';
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 <Box display="flex" flexDirection={{ base: "column", sm: "row", lg: "column" }} justifyContent="space-evenly">
                     <Box>
                         <Box display={"flex"} gap="7.42px">
-                            <Img w={{ base: "26.4px", sm: "42.63px", lg: "26.4px" }} h={{ base: "26.4px", sm: "42.63px", lg: "26.4px" }} src="./Images/logo.png" alt="logo" />
+                            <Link to={'/'}><Img w={{ base: "26.4px", sm: "42.63px", lg: "26.4px" }} h={{ base: "26.4px", sm: "42.63px", lg: "26.4px" }} src="./Images/logo.png" alt="logo" /></Link>
                             <Heading fontSize={{ base: "26px", sm: "44.23px", lg: "26px" }} fontWeight="600">CreativeProxies</Heading>
                         </Box>
                         <Text fontSize={{ base: "14px", sm: "23.82px", lg: "14px" }} mb="15px" fontWeight='400' color={'#111822'} lineHeight={{ base: "16.8px", sm: "28.58px", lg: "16.8px" }} w={{ base: "212px", sm: "361px", lg: "212px" }} h={{ base: "34px", sm: "58px", lg: "34px" }} mt={{ base: "8px", sm: "13px", lg: "8px" }}>Copyright © 2023 Creative Proxies. All rights reserved.</Text>

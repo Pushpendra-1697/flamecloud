@@ -4,12 +4,13 @@ import { AiOutlineArrowRight, AiFillStar, AiFillUnlock } from 'react-icons/ai';
 import { Icon } from '@chakra-ui/icons';
 import { BiMessageRounded } from 'react-icons/bi';
 import { GiFrogPrince } from 'react-icons/gi';
-import Footer from '../Components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
     const [featuresData, setFeaturesData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         getData();
@@ -29,6 +30,11 @@ const Landing = () => {
             console.log(err);
         }
     };
+
+    const handleClickToNavigateProxyLocationPage = () => {
+        navigate('/proxy');
+    };
+
     return (
         <Box fontFamily={"Figtree"} fontStyle="normal">
             <Box textAlign={"center"} mt="2px">
@@ -46,7 +52,7 @@ const Landing = () => {
                 We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service since 2020
             </Box>
             <Box mb={{ base: "26px", sm: "50px", lg: "26px" }} mt={{ base: "17px", sm: "26px", lg: "17px" }} lineHeight={{ base: "26.4px", sm: "48px", lg: "26.4px" }} m="auto" fontSize={{ base: "22px", sm: "40px", lg: "22px" }} w={{ base: "509px", sm: "899px", lg: "509px" }} fontWeight={"500"} h={{ base: "52px", sm: "92px", lg: "52px" }} ml={{ base: "40%", sm: "14%", lg: "40%" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Box>
-            <Box ml={{ base: 0, sm: "40%", lg: 0 }} textAlign={"center"} mt="26px"><Button borderRadius={{ base: "10px", sm: "20.72px", lg: "10px" }} bg="blue" w={{ base: "222px", sm: "460px", lg: "222px" }} h={{ base: "47px", sm: "97.39px", lg: "47px" }} color={"white"} p={{ base: '12px 55px', sm: "36px 115px", lg: "12px 55px" }} fontSize={{ base: "18px", sm: "37.3px", lg: "18px" }}>Get Started<AiOutlineArrowRight /></Button></Box>
+            <Box ml={{ base: 0, sm: "40%", lg: 0 }} textAlign={"center"} mt="26px"><Button onClick={handleClickToNavigateProxyLocationPage} borderRadius={{ base: "10px", sm: "20.72px", lg: "10px" }} bg="blue" w={{ base: "222px", sm: "460px", lg: "222px" }} h={{ base: "47px", sm: "97.39px", lg: "47px" }} color={"white"} p={{ base: '12px 55px', sm: "36px 115px", lg: "12px 55px" }} fontSize={{ base: "18px", sm: "37.3px", lg: "18px" }}>Get Started<AiOutlineArrowRight /></Button></Box>
             <Box ml={{ base: "40%", sm: "40%", lg: "43%" }} bg="#00B67A1A" w={{ base: "200px", sm: "480px", lg: "200px" }} borderRadius={"10px"} m="auto" mt={{ base: "22px", sm: "44px", lg: "22px" }} mb="54px" textAlign={"center"}>
                 <Box padding={"10px"}>
                     <Icon bg="#00B67A" color={"white"} as={AiFillStar} />
@@ -385,13 +391,6 @@ const Landing = () => {
 
                 </Box>
             </Box>
-
-            <Box w={{ base: "1192px", sm: "900px", lg: "1192px" }} color="#D9D8D6" m={"auto"}>
-                <hr />
-            </Box>
-
-            <Footer />
-
 
         </Box>
     );
