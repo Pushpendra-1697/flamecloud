@@ -9,7 +9,10 @@ https://blog-database-ten.vercel.app/feature
 
 # Some Screenshots of Project :
 # A) Laptop View :
-![Screenshot (168)](https://user-images.githubusercontent.com/104748364/228628846-f74f5079-5cf0-4f7a-ac80-a7f199137f13.png)
+![Screenshot (171)](https://user-images.githubusercontent.com/104748364/228808372-a343b7cb-c6d0-4741-9370-49c55dd96fdb.png)
+![Screenshot (172)](https://user-images.githubusercontent.com/104748364/228808387-522101ab-3bf9-4452-b451-41c7b5e49058.png)
+
 # B) Mobile View :
-![Screenshot (170)](https://user-images.githubusercontent.com/104748364/228628860-8c8addbe-a8c8-47f6-a9b9-491eae152dc9.png)
-![Screenshot (167)](https://user-images.githubusercontent.com/104748364/228628880-6943abe0-4fd5-46bf-9019-1d89da1fec47.png)
+![Screenshot (173)](https://user-images.githubusercontent.com/104748364/228808398-a6706c6f-4457-42d1-a46e-a8e292eff1f1.png)
+![Screenshot (174)](https://user-images.githubusercontent.com/104748364/228808409-01cc962f-97a2-4859-ac3a-3ea25a8813b7.png)
+![Screenshot (175)](https://user-images.githubusercontent.com/104748364/228808417-82b95a06-98a7-4f46-80e8-381c18ccf74b.png)
