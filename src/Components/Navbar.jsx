@@ -1,10 +1,10 @@
-import { Box, Button, Img, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react';
+import { Divider, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
 import { Link, useNavigate } from 'react-router-dom';
+import { BiChevronDown } from "react-icons/bi"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 const Navbar = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure();
     const navigate = useNavigate();
 
     const handleClickToNavigateProxyLocationPage = () => {
@@ -12,61 +12,47 @@ const Navbar = () => {
     };
 
     return (
-        <Box display="flex" justifyContent={{ base: "0", sm: "space-evenly", lg: "0" }} fontFamily="Figtree" w={{ base: "80%", sm: "1200px", lg: "80%" }} textAlign={"center"} m="auto" p={{ base: "1px", sm: "20px", lg: "1px" }}>
-            <Link to={'/'}><Img mt="17.87px" w={{ base: "25.06px", sm: "56.09px", lg: "25.06px" }} h={{ base: "25.06px", sm: "56.09px", lg: "25.06px" }} src={"./Images/logo.png"} alt="logo"></Img></Link>
-            <Text fontSize={{ base: "26px", sm: "55.24px", lg: "26px" }} style={{ fontStyle: "normal", fontWeight: "600", lineHeight: "31px", color: "#111822", marginLeft: "16.94px", marginTop: "14px" }}>CreativeProxies</Text>
-            <Box display={{ base: "flex", sm: "none", lg: "flex" }} gap="30px" ml="31px" fontStyle={"normal"} fontWeight="400" lineHeight="19px" letterSpacing={"-0.02em"} color="#111822" mt="20px">
-                <Text>Pricing</Text>
-                <Box><select>
-                    <option value={""}>Explore Tools</option>
-                </select></Box>
-                <Box><select>
-                    <option value={""}>Resources</option>
-                </select></Box>
-                <Text>FAQs</Text>
-                <Text>Blogs</Text>
-            </Box>
-            <Box display={{ base: "flex", sm: "none", lg: "flex", md: "none" }} ml="130.67px" mt="20.25px" mr={"22px"}>
-                <Img mt="5px" w="14.67px" h="10.67px" src={"./Images/surface1.png"} alt="image" />
-                <Text color={"blue"} ml="5.67px">Join Discord</Text>
-            </Box>
+        <Flex w="100%" pos="fixed" top="0" left="0" bg="#FFFFFF" zIndex={"1000"} >
+            <Flex w={"80%"} m="auto" flexDir={"row"} alignItems="center" justifyContent={"space-between"} borderBottom="1px solid #D9D8D6" py="20px" >
+                <Flex flexDir={"row"} cursor="pointer">
+                    <Link to={'/'}><Image src={'./Images/logo.png'} alt="Logo" mr="8.76px" /></Link>
+                    <Text color={"#111822"} fontSize={["16px", "16px", "20px", "20px", "20px"]} fontWeight={"600"} lineHeight="31px" >CreativeProxies</Text>
+                </Flex>
 
-            <Box display={{ base: "block", sm: "none", lg: "block", md: "none" }} h="31.5px" position={"absolute"} borderLeft="1px solid #D9D8D6" left={"74.7%"} top="15px"></Box>
+                <Flex flexDir={"row"} alignItems="center" justifyContent={"space-between"} display={["none", "none", "none", "flex", "flex"]} >
+                    <Flex mr={["130px", "130px", "130px", "10px", "120px"]}>
+                        <Text letterSpacing={"-0.02em"} color={"#111822"} fontSize="15px" mr={["30px", "30px", "30px", "20px", "25px"]} fontWeight={"400"} lineHeight="19.2px">Pricing</Text>
+                        <Flex flexDir={"row"} alignItems="center" mr={["30px", "30px", "30px", "20px", "25px"]} >
+                            <Text letterSpacing={"-0.02em"} color={"#111822"} fontSize="15px" mr="5px" fontWeight={"400"} lineHeight="19.2px">Explore Tools</Text>
+                            <BiChevronDown fontSize={"15px"} color={"#111822"} />
+                        </Flex>
+                        <Flex flexDir={"row"} alignItems="center" mr={["30px", "30px", "30px", "20px", "25px"]}>
+                            <Text color={"#111822"} fontSize="15px" mr="5px" fontWeight={"400"} lineHeight="19.2px">Resources</Text>
+                            <BiChevronDown fontSize={"15px"} color={"#111822"} />
+                        </Flex>
+                        <Text mr={["30px", "30px", "30px", "20px", "25px"]} color={"#111822"} fontSize="13px" fontWeight={"400"} lineHeight="19.2px">FAQs</Text>
+                        <Text color={"#111822"} fontSize="15px" fontWeight={"400"} lineHeight="19.2px">Blogs</Text>
+                    </Flex>
+                    <Flex flexDir={"row"} alignItems="center" display={["none", "none", "none", "none", "flex"]} >
+                        <Image src={'./Images/surface1.png'} alt="Discard" mr="5.7px" />
+                        <Text color={"#5865F2"} fontSize="15px" fontWeight={"500"} lineHeight="19px" >Join Discord</Text>
+                    </Flex>
+                    <Divider display={["none", "none", "none", "none", "initial"]} mx={["22px", "22px", "22px", "2px", "18px"]} orientation='vertical' border="1px" borderColor={'#D9D8D6'} h="30px" />
+                    <Text color={"#111822"} fontSize="15px" fontWeight={"400"} lineHeight="19.2px">Login</Text>
+                </Flex>
 
-            <Box display={"flex"} ml="22px">
-                <Text mt="20.25px" display={{ base: "block", sm: "none", lg: "block" }} mr="32px">Log in</Text>
-                <Button onClick={handleClickToNavigateProxyLocationPage} fontSize={{ base: "16px", sm: "29.1px", lg: "16px" }} mb="10px" color={"white"} bg="blue" mt="10px" p={{ base: "10px 22px", sm: "26.19px 40.5px", lg: "10px 22px" }} display="flex" justifyContent={"center"} alignItems="center">Get Started</Button>
-            </Box>
-            <Box onClick={onOpen} ml="2%" padding={"15px"} color={"#077BFF"} bg="#077BFF40" borderRadius={"8.52px"} display={{ base: 'none', sm: "block", lg: "none" }}>
-                <RxHamburgerMenu fontSize={"48px"} />
-            </Box>
+                <Flex>
+                    <Flex py="10px" px={["11px", "11px", "15px", "22px", "22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={handleClickToNavigateProxyLocationPage} bg="#077BFF" borderRadius={"5px"} >
+                        <Text color={"#fff"} fontSize={["15px", "15px", "16px", "16px", "15px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
+                    </Flex>
 
-            <Box>
-                <Modal isOpen={isOpen} onClose={onClose}>
-                    <ModalOverlay />
-                    <ModalContent>
-                        <ModalHeader>Navbar Pages</ModalHeader>
-                        <ModalCloseButton />
-                        <ModalBody>
-                            <Box>
-                            </Box>
-                            <Text>Login</Text>
-                            <Text>Blogs</Text>
-                            <Text>FAQs</Text>
-                            <Text>Resources</Text>
-                            <Text>Pricing</Text>
-                        </ModalBody>
-
-                        <ModalFooter>
-                            <Button colorScheme='blue' mr={3} onClick={onClose}>
-                                Close
-                            </Button>
-                        </ModalFooter>
-                    </ModalContent>
-                </Modal>
-            </Box>
-        </Box>
+                    <Flex ml="10px" display={["flex", "flex", "flex", "none", "none"]} flexDir={"row"} alignItems="center" justifyContent={"space-between"} bg="rgba(7, 123, 255, 0.25)" px="15px" py="7px" borderRadius={"8.52px"} >
+                        <GiHamburgerMenu color='#077BFF' fontSize={"25px"} m="0" />
+                    </Flex>
+                </Flex>
+            </Flex>
+        </Flex>
     );
-}
+};
 
 export default Navbar;
