@@ -65,34 +65,34 @@ const Landing = () => {
                 display={"flex"}
                 flexDir="column"
                 alignItems={"center"}>
-                <Img src='./Images/Frame7.png' alt="Frame7" />
-                <Img src='./Images/Frame6.png' alt="Frame6" />
+                <Img w={{base:"200px", md:'200px', lg:"200px"}} src='./Images/Frame7.png' alt="Frame7" />
+                <Img w={{base:"auto", md:'200px', lg:"auto"}} src='./Images/Frame6.png' alt="Frame6" />
             </Box>
             <Box w={{ base: "588px", sm: "900px", lg: "588px" }} m="auto"><hr /></Box>
 
 
             <Box pl='18px' display={"grid"} gap={{ base: "16.16px", sm: "24.49px", lg: "16.16px" }} gridTemplateColumns={{ base: "repeat(4,1fr)", sm: "repeat(2,1fr)", lg: "repeat(4,1fr)" }} width="1200px" m="auto" mt="36.36px" mb="138.36px">
                 <Box border={"1px solid #D4EAE8"} padding={"25.28px 25px 26px 35px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
-                    <Img w={["25%", "25%", "18%"]}
-                        h={["25px", "25px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                    <Img w={["25%", "8%", "18%"]}
+                        h={["25px", "45px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
                         borderRadius="8px" src='./Images/square.png' alt="square" />
                     <Text ml={"16px"} lineHeight={{ base: "21.6px", sm: "33.06px", lg: "21.6px" }} fontSize={{ base: "18px", sm: "27.55px", lg: "18px" }} width={{ base: "148px", sm: "227px", lg: "148px" }}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
                 <Box border={"1px solid #D4EAE8"} padding={"25.28px 25px 26px 35px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
-                    <Img w={["25%", "25%", "18%"]}
-                        h={["25px", "25px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                    <Img w={["25%", "8%", "18%"]}
+                        h={["25px", "45px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
                         borderRadius="8px" src='./Images/square.png' alt="square" />
                     <Text ml={"16px"} lineHeight={{ base: "21.6px", sm: "33.06px", lg: "21.6px" }} fontSize={{ base: "18px", sm: "27.55px", lg: "18px" }} width={{ base: "148px", sm: "227px", lg: "148px" }}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
                 <Box border={"1px solid #D4EAE8"} padding={"24.28px 25px 26px 35px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
-                    <Img w={["25%", "25%", "18%"]}
-                        h={["25px", "25px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                    <Img w={["25%", "8%", "18%"]}
+                        h={["25px", "45px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
                         borderRadius="8px" src='./Images/square.png' alt="square" />
                     <Text ml={"16px"} lineHeight={{ base: "21.6px", sm: "33.06px", lg: "21.6px" }} fontSize={{ base: "18px", sm: "27.55px", lg: "18px" }} width={{ base: "148px", sm: "227px", lg: "148px" }}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
                 <Box border={"1px solid #D4EAE8"} padding={"24.28px 25px 26px 35px"} bg="#00B67A1A" borderRadius={"10px"} display={"flex"}>
-                    <Img w={["25%", "25%", "18%"]}
-                        h={["25px", "25px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                    <Img w={["25%", "8%", "18%"]}
+                        h={["25px", "45px", "40px"]} background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
                         borderRadius="8px" src='./Images/square.png' alt="square" />
                     <Text ml={"16px"} lineHeight={{ base: "21.6px", sm: "33.06px", lg: "21.6px" }} fontSize={{ base: "18px", sm: "27.55px", lg: "18px" }} width={{ base: "148px", sm: "227px", lg: "148px" }}>Lorem Ipsum Dolor Sit Amet Top</Text>
                 </Box>
@@ -111,8 +111,8 @@ const Landing = () => {
                 <Box pl="15px" pb="114px" w={{ base: "85%", sm: "100%", lg: "85%" }} m="auto" display={"grid"} gap={{ base: '16px', sm: "24.49px", lg: "16px" }} gridTemplateColumns={{ base: "repeat(4,1fr)", sm: "repeat(2,1fr)", lg: "repeat(4,1fr)" }}>
                     {featuresData && featuresData.map(({ id, feature, lorem }) =>
                         <Box w={{ base: "286px", sm: "437.76px", lg: "286px" }} h={{ base: "160px", sm: "244.9px", lg: "160px" }} borderRadius={"5px"} color={"#FFFFFF"} mt="30px" padding={"25px"} border={"1px solid #D4EAE8"} key={id} p="22px 25px">
-                            <Img w={{ base: "15.88px", sm: "13px", lg: "15.88px" }}
-                                h={{ base: "16.87px", sm: "8.26px", lg: "16.87px" }} src='./Images/people.png' alt="people" />
+                            <Img w={{ base: "15.88px", sm: "43px", lg: "15.88px" }}
+                                h={{ base: "16.87px", sm: "48.26px", lg: "16.87px" }} src='./Images/people.png' alt="people" />
                             <Heading m="9.53px 0 8px 0" fontWeight={"600"} fontSize={{ base: "20px", sm: "30.61px", lg: "20px" }}>{feature}</Heading>
                             <Text opacity={0.5} lineHeight={{ base: "16.8px", sm: "25.71px", lg: "16.8px" }} fontSize={{ base: "14px", sm: "21.43px", lg: "14px" }} fontWeight="400">{lorem}</Text>
                         </Box>
