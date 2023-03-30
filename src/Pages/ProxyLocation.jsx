@@ -12,7 +12,7 @@ import {
 
 const ProxyLocation = () => {
   return (
-    <Box fontFamily={"Figtree"} mt="7%">
+    <Box mt="7%">
       <Text
         textAlign={"center"}
         fontWeight="600"
@@ -31,13 +31,13 @@ const ProxyLocation = () => {
         lineHeight={["35px", "45px", "56px"]}
       >
         <Text>Check Locations of all your </Text>
-        <Text display={"inline"}>Proxies </Text>
+        <Text display={"inline"} ml={{ base: "80px", sm: "0", lg: "80px" }}>Proxies </Text>
         <Text display={"inline"} color="#077BFF">
           Free
         </Text>
         <Text display={"inline"}> of Cost</Text>
       </Box>
-      <Box w={["68%", "46%", "36%"]} m="auto" mt="0.8%">
+      <Box w={["68%", "46%", "29%"]} m="auto" mt="0.8%">
         <Text
           lineHeight={["22px", "26px", "26px"]}
           fontSize={["15px", "18px", "22px"]}
