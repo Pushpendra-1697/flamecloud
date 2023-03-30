@@ -1,55 +1,59 @@
-import { Box, Button, Heading, Img, Text } from '@chakra-ui/react';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Flex, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Footer = () => {
+
+    const navigate = useNavigate()
+    const handleClickToNavigateProxyLocationPage = () => {
+        navigate('/');
+    };
+
     return (
-        <Box>
-            <Box w="1192px" m="auto" mb={{ base: "48px", sm: "77.67px", lg: "48px" }} mt={{ base: "34px", sm: "67.7px", lg: "34px" }} display={"flex"} gap={{ base: "246px", sm: "60.95px", lg: "246px" }} flexDirection={{ base: "row", sm: "column", lg: "row" }}>
-                <Box display="flex" flexDirection={{ base: "column", sm: "row", lg: "column" }} justifyContent="space-evenly">
-                    <Box>
-                        <Box display={"flex"} gap="7.42px">
-                            <Link to={'/'}><Img w={{ base: "26.4px", sm: "42.63px", lg: "26.4px" }} h={{ base: "26.4px", sm: "42.63px", lg: "26.4px" }} src="./Images/logo.png" alt="logo" /></Link>
-                            <Heading fontSize={{ base: "26px", sm: "44.23px", lg: "26px" }} fontWeight="600">CreativeProxies</Heading>
-                        </Box>
-                        <Text fontSize={{ base: "14px", sm: "23.82px", lg: "14px" }} mb="15px" fontWeight='400' color={'#111822'} lineHeight={{ base: "16.8px", sm: "28.58px", lg: "16.8px" }} w={{ base: "212px", sm: "361px", lg: "212px" }} h={{ base: "34px", sm: "58px", lg: "34px" }} mt={{ base: "8px", sm: "13px", lg: "8px" }} opacity={0.5}>Copyright © 2023 Creative Proxies. All rights reserved.</Text>
-                    </Box>
-                    <Box>
-                        <Button display={"flex"} justifyContent="center" alignItems={"center"} border={"1px solid #5865F2"} bg='#5865F21A' borderRadius={{ base: "10px", sm: "17.01px", lg: "10px" }} w={{ base: "221px", sm: "375.99px", lg: "221px" }} h={{ base: "44px", sm: "74px", lg: "44px" }} fontSize={{ base: "16px", sm: "27.22px", lg: "16px" }} fontWeight='500'> <Img mr='5.67px' h={{ sm: "10.67px", sm: "18.15px", lg: "10.67px" }} w={{ base: "14.67px", sm: "24.95px", lg: "14.67px" }} src='./Images/surface1.png' alt='surface1' />Join Our Discord</Button>
-                    </Box>
-                </Box>
-
-                <Box display={"flex"} justifyContent={{ base: "0", sm: "space-evenly", lg: "0" }} gap={{ base: "144px", sm: "0", lg: "144px" }}>
-                    <Box>
-                        <Heading color={"#111822"} opacity={0.25} fontSize={{ base: "14px", sm: '23.82px', lg: "14px" }} fontWeight="600">Explore</Heading>
-                        <Box mt={{ base: "10px", sm: "22.12px", lg: "10px" }} lineHeight={{ base: "24.2px", sm: "52.12px", lg: "24.2px" }} fontWeight={"500"} fontSize={{ base: "16px", sm: "27.22px", lg: "16px" }}>
-                            <Text>Proxy Location Checker</Text>
-                            <Text>IPv6 Comptability</Text>
-                            <Text>Blogs</Text>
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Heading color={"#111822"} opacity={0.25} fontSize={{ base: "14px", sm: '23.82px', lg: "14px" }} fontWeight="600">Resources</Heading>
-                        <Box mt={{ base: "10px", sm: "22.12px", lg: "10px" }} lineHeight={{ base: "24.2px", sm: "52.12px", lg: "24.2px" }} fontWeight={"500"} fontSize={{ base: "16px", sm: "27.22px", lg: "16px" }}>
-                            <Text>FAQs</Text>
-                            <Text>Branding</Text>
-                            <Text>Network Information</Text>
-                            <Text>Imprint</Text>
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Heading color={"#111822"} opacity={0.25} fontSize={{ base: "14px", sm: '23.82px', lg: "14px" }} fontWeight="600">Support</Heading>
-                        <Box mt={{ base: "10px", sm: "22.12px", lg: "10px" }} lineHeight={{ base: "24.2px", sm: "52.12px", lg: "24.2px" }} fontWeight={"500"} fontSize={{ base: "16px", sm: "27.22px", lg: "16px" }}>
-                            <Text>Status</Text>
-                            <Text>Terms of Service</Text>
-                            <Text>Privacy Policy</Text>
-                        </Box>
-                    </Box>
-                </Box>
-
-            </Box>
-        </Box>
+        <Flex w="100%">
+            <Flex w={["80%", "80%", "100%", "80%", "80%"]} flexDir={["column", "column", "column", "row", "row"]} py="40px" m="auto" borderTop="1px solid #D9D8D6" justifyContent="space-between" >
+                <Flex flexDir={["row", "row", "row", "column", "column"]} w={["95%", "95%", "95%", "70%", "16%"]} mr={["300px", "300px", "300px", "0px", "0px"]} justifyContent="space-between" >
+                    <Flex flexDir={"column"} w={["48%", "48%", "30%", "100%", "100%"]} >
+                        <Flex flexDir={"row"} onClick={handleClickToNavigateProxyLocationPage} cursor="pointer"  >
+                            <Image src={'./Images/logo.png'} alt="Logo" mr="2px" />
+                            <Text color={"#111822"} fontSize={["16px", "16px", "20px", "22px", "22px"]} fontWeight={"600"} lineHeight="31px" >CreativeProxies</Text>
+                        </Flex>
+                        <Text mb="14px" mt="6px" ml='10px' color={"#969493"} w={["100%", "100%", "100%", "100%", "100%"]} fontSize={["11px", "11px", "11px", "12px", "12px"]} fontWeight={"400"} lineHeight="16.8px" >Copyright © 2023 Creative Proxies.
+                            All rights reserved.</Text>
+                    </Flex>
+                    <Flex alignItems="center" w={["46%", "46%", "50%", "100%", "100%"]} >
+                        <Flex bg="rgba(88, 101, 242, 0.1)" border="1px solid #5865F2" w="100%" alignItems={"center"} justifyContent="center" borderRadius={"10px"} >
+                            <Flex flexDir={"row"} alignItems="center" p={["8px 4.8px", "8px 4.8px", "15px 40px", "12.5px 4.8px", "12.5px 4.8px"]}  >
+                                <Image src={'./Images/surface1.png'} alt="Logo" mr="6px" />
+                                <Text color={"#5865F2"} fontSize={["13px", "13px", "16px", "16px", "16px"]} fontWeight={"500"} lineHeight="19px" >Join Our Discord</Text>
+                            </Flex>
+                        </Flex>
+                    </Flex>
+                </Flex>
+                <SimpleGrid columns={3} spacing={["20px", "20px", "20px", "40px", "50px"]} mt={["20px", "20px", "20px", "0px", "0px"]} ml={["7px", "7px", "7px", "0px", "0px"]} w={["95%", "95%", "95%", "70%", "70%"]} >
+                    <Flex flexDir={"column"} >
+                        <Text mb="13px" color={"#888c91"} fontSize="12px" fontWeight={"400"} lineHeight="16.8px" >Explore</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Proxy Location Checker</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">IPv6 Comptability</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Blogs</Text>
+                    </Flex>
+                    <Flex flexDir={"column"} >
+                        <Text mb="13px" color={"#888c91"} fontSize="12px" fontWeight={"400"} lineHeight="16.8px" >Resources</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">FAQs</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Branding</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Network Information</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Imprint</Text>
+                    </Flex>
+                    <Flex flexDir={"column"} >
+                        <Text mb="13px" color={"#888c91"} fontSize="12px" fontWeight={"400"} lineHeight="16.8px" >Support</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Status</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Terms of Service</Text>
+                        <Text mb="13px" color={"#111822"} fontSize={["12px", "12px", "16px", "16px", "16px"]} fontWeight={"400"} lineHeight="19.2px">Privacy Policy</Text>
+                    </Flex>
+                </SimpleGrid>
+            </Flex>
+        </Flex >
     )
 }
 
-export default Footer;
+export default Footer

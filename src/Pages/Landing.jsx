@@ -24,7 +24,6 @@ const Landing = () => {
             setLoading(true);
             let res = await axios.get(`https://blog-database-ten.vercel.app/feature`);
             setLoading(false);
-            console.log(res);
             setError(false);
             setFeaturesData(res.data);
         } catch (err) {
@@ -33,8 +32,6 @@ const Landing = () => {
             console.log(err);
         }
     };
-
-    // console.log(featuresData);
 
     const handleClickToNavigateProxyLocationPage = () => {
         navigate('/proxy');

@@ -12,7 +12,7 @@ import {
 
 const ProxyLocation = () => {
   return (
-    <Box mt="7%">
+    <Box mt={["52%", "52%", "12%"]}>
       <Text
         textAlign={"center"}
         fontWeight="600"
@@ -26,18 +26,13 @@ const ProxyLocation = () => {
       <Box
         w={["90%", "50%", "50%"]}
         m="auto"
-        fontSize={["56px", "40px", "56px"]}
+        fontSize={["30px", "30px", "56px"]}
         fontWeight="600"
         lineHeight={["35px", "45px", "56px"]}
       >
-        <Text>Check Locations of all your </Text>
-        <Text display={"inline"} ml={{ base: "80px", sm: "0", lg: "80px" }}>Proxies </Text>
-        <Text display={"inline"} color="#077BFF">
-          Free
-        </Text>
-        <Text display={"inline"}> of Cost</Text>
+        <Text>Check Locations of all your Proxies <span style={{color:"#077BFF"}}>Free</span> of Cost</Text>
       </Box>
-      <Box w={["68%", "46%", "29%"]} m="auto" mt="0.8%">
+      <Box w={["68%", "46%", "29%"]} m="auto" mt={["10%","10%","1%"]}>
         <Text
           lineHeight={["22px", "26px", "26px"]}
           fontSize={["15px", "18px", "22px"]}
@@ -57,23 +52,23 @@ const ProxyLocation = () => {
         borderRadius="5px"
         w={["88%", "68%", "48%"]}
         m="auto"
-        mt="2%"
+        mt={["27%","27%","5%"]}
         pt="15px"
         pl="15px"
         h="30%"
       >
         <Text>8.8.8.8</Text>
         <Text>1.1.1.1</Text>
-        <Text pb="2%">192.168.1.1</Text>
+        <Text pb={["27%", "27%","12%"]}>192.168.1.1</Text>
       </Box>
       <Box
         display={"flex"}
+        flexDirection={["column", "column", "row"]}
         justifyContent="space-between"
         alignItems={"center"}
         w={["88%", "48%", "48%"]}
         m="auto"
-        mt="1.5%"
-        gap="10px"
+        mt={["7%", "7%", "1.5%"]}
       >
         <Text
           bg="#077BFF"
@@ -94,6 +89,7 @@ const ProxyLocation = () => {
           lineHeight={"17px"}
           fontSize="14px"
           flexBasis={["50%", "40%", "33%"]}
+          mt={['5%', '5%', 'auto']}
         >
           By using our tool, you agree our Terms of Service and Privacy Policy
         </Text>
@@ -106,8 +102,8 @@ const ProxyLocation = () => {
         textAlign={"justify"}
         w={["88%", "68%", "48%"]}
         m="auto"
-        mt="1.3%"
-        mb="0.5%"
+        mt={["20%", "20%", "1.3%"]}
+        mb={["5.5%", "5.5%", "0.5%"]}
       >
         Your Result
       </Text>
@@ -164,7 +160,7 @@ const ProxyLocation = () => {
         mt="2%"
         mb={{ base: "99px", sm: "117.82px", lg: "99px" }}
       >
-        <Text fontWeight={"500"} fontSize="18px" lineHeight={"22px"} mt="1%">
+        <Text fontWeight={"500"} fontSize="18px" lineHeight={"22px"} mt={["14%", "14%", "1%"]}>
           Check out our IPv6 Compatibility Checker
         </Text>
         <Box
@@ -175,7 +171,7 @@ const ProxyLocation = () => {
           gap={1}
           pt={["5px", null, null]}
         >
-          <Image src={'./Images/View Tool.png'} alt="" w={["40%", "50%", "100%"]} />
+          <Image src={'./Images/View Tool.png'} alt="" w={["60%", "80%", "100%"]} />
           <Image src={'./Images/RightArrow.png'} alt="" w={["20%", "40%", "80%"]} />
         </Box>
       </Box>

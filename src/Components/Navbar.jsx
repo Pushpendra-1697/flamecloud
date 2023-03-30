@@ -1,4 +1,4 @@
-import { Divider, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiChevronDown } from "react-icons/bi"
@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 
 const Navbar = () => {
     const navigate = useNavigate();
+    const { isOpen, onOpen, onClose } = useDisclosure();
 
     const handleClickToNavigateProxyLocationPage = () => {
         navigate('/proxy');
@@ -43,14 +44,42 @@ const Navbar = () => {
 
                 <Flex>
                     <Flex py="10px" px={["11px", "11px", "15px", "22px", "22px"]} cursor={"pointer"} flexDir={"row"} alignItems="center" justifyContent={"space-between"} onClick={handleClickToNavigateProxyLocationPage} bg="#077BFF" borderRadius={"5px"} >
-                        <Text color={"#fff"} fontSize={["15px", "15px", "16px", "16px", "15px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
+                        <Text w={["75px", "75px", "auto"]} color={"#fff"} fontSize={["15px", "15px", "16px", "16px", "15px"]} fontWeight={"600"} lineHeight="19.2px">Get Started</Text>
                     </Flex>
 
                     <Flex ml="10px" display={["flex", "flex", "flex", "none", "none"]} flexDir={"row"} alignItems="center" justifyContent={"space-between"} bg="rgba(7, 123, 255, 0.25)" px="15px" py="7px" borderRadius={"8.52px"} >
-                        <GiHamburgerMenu color='#077BFF' fontSize={"25px"} m="0" />
+                        <GiHamburgerMenu onClick={onOpen} color='#077BFF' fontSize={"25px"} m="0" />
                     </Flex>
                 </Flex>
             </Flex>
+
+
+            <Box>
+                <Modal isOpen={isOpen} onClose={onClose}>
+                    <ModalOverlay />
+                    <ModalContent>
+                        <ModalHeader textAlign={"center"}>Navbar Pages</ModalHeader>
+                        <ModalCloseButton />
+                        <ModalBody display={"flex"} flexDirection="column" justifyContent={"center"} alignItems="center" gap={"10px"}>
+                            <Text color={"#111822"} fontSize="15px" mr={["30px", "30px", "30px", "20px", "25px"]} fontWeight={"400"}>Pricing</Text>
+                            <Text color={"#111822"} fontSize="15px" fontWeight={"400"} >Resources</Text>
+                            <Text color={"#111822"} fontSize="13px" fontWeight={"400"} >FAQs</Text>
+                            <Text color={"#111822"} fontSize="15px" fontWeight={"400"} >Blogs</Text>
+                            <Text color={"#111822"} fontSize="15px" fontWeight={"500"} >Join Discord</Text>
+                            <Text color={"#111822"} fontSize="15px" fontWeight={"400"} >Login</Text>
+                        </ModalBody>
+
+                        <ModalFooter>
+                            <Button variant={"outline"} colorScheme='blue' mr={3} onClick={onClose}>
+                                Close
+                            </Button>
+                        </ModalFooter>
+                    </ModalContent>
+                </Modal>
+            </Box>
+
+
+
         </Flex>
     );
 };
