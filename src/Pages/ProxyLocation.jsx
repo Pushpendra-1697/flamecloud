@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Highlight, Image, Text } from "@chakra-ui/react";
 import {
   Table,
   Thead,
@@ -30,9 +30,9 @@ const ProxyLocation = () => {
         fontWeight="600"
         lineHeight={["35px", "45px", "56px"]}
       >
-        <Text>Check Locations of all your Proxies <span style={{color:"#077BFF"}}>Free</span> of Cost</Text>
+        <Text>Check Locations of all your Proxies <span style={{ color: "#077BFF" }}>Free</span> of Cost</Text>
       </Box>
-      <Box w={["68%", "46%", "29%"]} m="auto" mt={["10%","10%","1%"]}>
+      <Box w={["68%", "46%", "29%"]} m="auto" mt={["10%", "10%", "1%"]}>
         <Text
           lineHeight={["22px", "26px", "26px"]}
           fontSize={["15px", "18px", "22px"]}
@@ -52,14 +52,14 @@ const ProxyLocation = () => {
         borderRadius="5px"
         w={["88%", "68%", "48%"]}
         m="auto"
-        mt={["27%","27%","5%"]}
+        mt={["27%", "27%", "5%"]}
         pt="15px"
         pl="15px"
         h="30%"
       >
         <Text>8.8.8.8</Text>
         <Text>1.1.1.1</Text>
-        <Text pb={["27%", "27%","12%"]}>192.168.1.1</Text>
+        <Text pb={["27%", "27%", "12%"]}>192.168.1.1</Text>
       </Box>
       <Box
         display={"flex"}
@@ -91,7 +91,12 @@ const ProxyLocation = () => {
           flexBasis={["50%", "40%", "33%"]}
           mt={['5%', '5%', 'auto']}
         >
-          By using our tool, you agree our Terms of Service and Privacy Policy
+          <Highlight
+            query={['Terms of Service', 'Privacy Policy']}
+            styles={{ textDecoration: "underline", textDecorationColor: "#111822", textDecorationThickness: 0.5 }}
+          >
+            By using our tool, you agree our Terms of Service and Privacy Policy
+          </Highlight>
         </Text>
       </Box>
       <Text
