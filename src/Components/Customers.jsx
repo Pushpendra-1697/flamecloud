@@ -4,14 +4,14 @@ import React from 'react'
 const Customers = () => {
     return (
         <>
-            <Box mt={{ base: "180px", sm: "201.29px", lg: "180px" }} display={"flex"} justifyContent="center" flexDirection={"column"} alignItems="center" mb={{ base: "34px", sm: "100.49px", lg: "34px" }} w={{ base: "40%", sm: "1200px", lg: "40%" }} m={{ base: "auto" }}>
+            <Box textAlign={"center"}  display={"flex"} justifyContent="center" flexDirection={"column"} alignItems="center"  w={{ base: "100%", sm: "100%", lg: "40%" }} m={{ base: "auto" }} mt={{ base: "30%", sm: "30%", lg: "180px" }} mb={{ base: "10%", sm: "10%", lg: "34px" }}>
                 <Heading mb={{ base: "10px", sm: "16.49px", lg: "10px" }} lineHeight={"43.2px"} fontSize={{ base: '36px', sm: "59.31px", lg: "36px" }}>Customers <span style={{ color: "#16D113" }}>Love</span> our Proxies</Heading>
-                <Text w={{ base: '465px', sm: "766.06px", lg: "465px" }} lineHeight={{ base: "21.6px", sm: "35.58px", lg: "21.6px" }} opacity={0.5} fontSize={{ base: "18px", sm: "29.65px", lg: "18px" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+                <Text w={{ base: '100%', sm: "100%", lg: "465px" }} lineHeight={{ base: "21.6px", sm: "35.58px", lg: "21.6px" }} opacity={0.5} fontSize={{ base: "18px", sm: "29.65px", lg: "18px" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             </Box>
 
 
 
-            <Box display={"flex"} w={{ base: "75%", sm: "1200px", lg: "75%" }} m="auto" gap={{ base: "17px", sm: "28.01px", lg: "17px" }} flexDirection={{ base: "row", sm: "column", lg: "row" }} justifyContent="center" alignItems={"center"} >
+            <Box display={"flex"} w={{ base: "100%", sm: "100%", lg: "75%" }} m="auto" gap={{ base: "17px", sm: "28.01px", lg: "17px" }} flexDirection={{ base: "column", sm: "column", lg: "row" }} justifyContent="center" alignItems={"center"} ml={["3%", "3%", "auto"]}>
                 <Box border={"1px solid rgba(22, 209, 19, 0.5)"} borderRadius={{ base: "5px", sm: "8.24px", lg: "5px" }} bg="#1E1E1E03" w={{ base: "386px", sm: "635.91px", lg: "386px" }} h={{ base: "248px", sm: "408.56px", lg: "248px" }}>
                     <Box p="29px 0 32.1px 25px">
                         <Box display={"flex"}>

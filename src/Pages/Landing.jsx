@@ -82,8 +82,7 @@ const Landing = () => {
             <Pricing />
             
             <Customers />
-            {/* 
-            <Blog /> */}
+            <Blog />
         </Box>
     );
 }
